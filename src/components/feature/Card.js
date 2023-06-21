@@ -13,7 +13,7 @@ export const Card = ({title,des,icon}) => {
             <span className='text-3xl text-red-500'>{icon}</span>
            </div>
             <div className='flex flex-col gap-4'>
-            <h2 className=' font-titleFont font-bold text-gray-300 '>{title}</h2>
+            <h2 className=' text-xl md:text-2xl font-titleFont font-bold text-gray-300 '>{title}</h2>
              <p className='base'>{des} </p>
              <span className='text-1xl text-designColor'><HiArrowRight/></span>
            </div> 

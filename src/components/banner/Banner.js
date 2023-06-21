@@ -4,7 +4,7 @@ import { RightBanner } from "./RightBanner";
 
 // import { useTypewriter,Cursor } from "react-simple-typewriter";
 // import{FaFacebookF,FaLinkedinIn,FaReact} from 'react-icons/fa';
-import { bannerImage } from "../../assets/index";
+// import { bannerImage } from "../../assets/index";
 export const Banner = () => {
 
     // const [text]=useTypewriter({
@@ -17,7 +17,7 @@ export const Banner = () => {
   return (
     <section
       id="home"
-      className="w-full py-10 pb-20 flex items-centre border-b-[1px] font-titleFont border-b-black "
+      className="w-full pt-10 pb-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-black "
     >
       <LeftBanner/>
       <RightBanner/>

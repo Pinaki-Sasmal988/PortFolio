@@ -12,13 +12,13 @@ export const Resume = () => {
   return (
     <section
       id="resume"
-      className="w-full h-auto py-20 ml-10 items-centre border-b-[1px] border-b-gray-300"
+      className="w-full h-auto py-20 items-centre border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
         <Tittle Tittle="Visit My Resume Section" des="My Resume" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-5">
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           <li onClick={()=>setEducationData(true) &
            setExperienceData(false) &
             setSkillData(false)
