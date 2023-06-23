@@ -12,10 +12,10 @@ export const Resume = () => {
   return (
     <section
       id="resume"
-      className="w-full h-auto py-20 items-centre border-b-[1px] border-b-black"
+      className="w-full h-auto py-20 items-centre border-b-[1px] border-b-gray-600"
     >
       <div className="flex justify-center items-center text-center">
-        <Tittle Tittle="Visit My Resume Section" des="My Resume" />
+        <Tittle Tittle="" des="My Resume" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">

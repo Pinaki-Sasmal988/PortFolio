@@ -33,17 +33,12 @@ export const ContactRight = () => {
     }
    }
   return (
-    <div className=" w-full lgl:w-[62%] h-auto flex flex-col p-4 lgl:p-8 mt-2 lgl:mt-0 justify-between bg-[#1a1b1b]">
-            <div className="mt-1 ml-2 mr-2"> 
-            <form className="w-full  flex flex-col gap-3 lgl:gap-6 py-2 lgl:py-6">
-            {errMsg &&(<p className=" bg-gradient-to-r from-[#le2024] 
-            to-[#23272b] shadow-shawOne text-center text-orange-500 text-base 
-            tracking-wide animate-bounce">{errMsg}</p>)}
-            {success && <p className="bg-gradient-to-r from-[#le2024] 
-            to-[#23272b] shadow-shawOne text-center text-green-500 text-base 
-            tracking-wide animate-bounce">{success}</p>}
+    <div className=" w-full lgl:w-[62%] h-auto flex flex-col p-4 lgl:p-6 mt-2 lgl:mt-0 justify-between bg-[#1a1b1b]">
+            <div className="mt-0 ml-2 mr-2"> 
+            <form className="w-full  flex flex-col gap-3 lgl:gap-6 py-2 lgl:py-4">
+            
 
-              <div className="w-full flex flex-col lgl:flex-row gap-5">
+              <div className="w-full flex flex-col lgl:flex-row gap-4">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4 ">
                 <p className='text-sm text-gray-400 tracking-wide'>Your Name</p>
                 <input onChange={(e)=>{setUserName(e.target.value)}}  value={userName} className='inputText' type='text'/>
@@ -69,12 +64,18 @@ export const ContactRight = () => {
               <div className="w-full flex flex-col gap-4 ">
                 <p className='text-sm text-gray-400 tracking-wide'>Message</p>
                   <textarea onChange={(e)=>{setMessage(e.target.value)}}  
-                  value={message} className='bg-[#0a0a0a] ' cols='20' rows='5' type='email'></textarea>
+                  value={message} className='bg-[#0a0a0a] ' cols='20' rows='4' type='email'></textarea>
                 </div>
               </div>
               <div>
                 <button onClick={handleValue} className="w-full h-10 bg-[#0a0a0a] rounded-lg  text-base text-gray-400 tracking-wide hover:text-white duration-300  hover:border-[1px] hover:border-designColor border-transparent" >Submit</button>
               </div>
+              {errMsg &&(<p className=" bg-gradient-to-r from-[#le2024] 
+            to-[#23272b] shadow-shawOne text-center text-orange-500 text-base 
+            tracking-wide animate-bounce">{errMsg}</p>)}
+            {success && <p className="bg-gradient-to-r from-[#le2024] 
+            to-[#23272b] shadow-shawOne text-center text-green-500 text-base 
+            tracking-wide animate-bounce">{success}</p>}
             </form>
             </div>
           </div>

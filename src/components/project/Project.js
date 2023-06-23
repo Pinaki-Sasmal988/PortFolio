@@ -1,31 +1,34 @@
 import React from 'react'
 import { Tittle } from '../layout/Tittle'
 import { ProjectCard } from './ProjectCard'
-import {projectOne} from '../../assets/index'
+import {blood, ecommerce, news} from '../../assets/index'
 export const Project = () => {
   return (
     <section id="project" 
-    className='w-full h-auto py-20 items-centre border-b-[1px] border-b-black'>
+    className='w-full h-auto py-20 items-centre border-b-[1px] border-b-gray-600'>
         <div className='flex justify-center items-center text-center'>
-        <Tittle Tittle="Visit My Project Section" des="My Project"/>
+        <Tittle Tittle="" des="My Project"/>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-7 xl:gap-14'>
           <ProjectCard 
           
-          tittle="Social Media Clone"
+          tittle="Blood Find Application"
           des="Learn from me totally free,Thats would be very help in your futures"
-          img={projectOne}
+          img={blood}
+          link="https://github.com/Pinaki-Sasmal988/Final_year"
           />
-          <ProjectCard 
-            tittle="Blood Find Application"
+        <ProjectCard 
+            tittle="E-Commerce site"
             des="Learn from me totally free, Thats would be very help in your futures"
-            img={projectOne}
+            img={ecommerce}
+            link="https://github.com/Pinaki-Sasmal988/E_Commerce"
           />
           <ProjectCard 
-            tittle="Social Media Clone"
+            tittle="Article News System"
             des="Learn from me totally free"
-            img={projectOne}
-          />
+            img={news}
+            link="https://github.com/Pinaki-Sasmal988/News-System"
+          /> 
 
         </div>
     </section>

@@ -10,6 +10,10 @@
      @apply  w-14 h-14 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300 
    
  } 
+ .cvIcon{
+    @apply  w-auto h-12 bg-designColor bg-opacity-30 text-white text-sm inline-flex items-center justify-center rounded-md   cursor-pointer  
+
+ }
  .resume{
    @apply w-full h-10 bg-black bg-opacity-20 text-xl
              text-gray-300 flex justify-center cursor-pointer 

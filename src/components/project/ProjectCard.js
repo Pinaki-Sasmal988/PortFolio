@@ -1,6 +1,7 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
-export const ProjectCard = ({ tittle, des, img }) => {
+import { Link } from "react-scroll";
+export const ProjectCard = ({ tittle, des, img, link }) => {
   return (
     <div
       className="w-full h-auto p-4 xl:px-12 xl:py-10 rounded-lg 
@@ -21,7 +22,7 @@ export const ProjectCard = ({ tittle, des, img }) => {
           <h3 className="text-xl md:text-2xl text-designColor font-normal">{tittle}</h3>
           <div className="flex ml-10">
             <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-              {<BsGithub/>}
+              <a href={link} target="_blank">{<BsGithub/>}</a>
             </span>
           </div>
         </div>

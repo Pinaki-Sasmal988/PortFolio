@@ -13,20 +13,26 @@ export const Education = () => {
           <ResumeCard
             title="B Tech In Computer Science"
             subTitle="University of MAKAUT[2020-2023]"
-            result="82/100"
-            des="Passed From some thing"
+            result="80%"
+            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
           />
           <ResumeCard
             title="Diploma In Computer Science"
             subTitle="University of WBSCVE&SD[2018-2020]"
-            result="79/100"
+            result="79%"
             des="Same here"
           />
           <ResumeCard
             title="Hiegher Secondery In Computer & Application"
-            subTitle="University of WBSCVE&SD[2016-2018]"
-            result="60/100"
-            des="Passed hs .."
+            subTitle="Board of WBSCVE&SD[2016-2018]"
+            result="79%"
+            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
+          />
+          <ResumeCard
+           title="Secondery Education"
+           subTitle="Board of WBBSE[2016]"
+           result="61%"
+           des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
           />
         </div>
       </div>

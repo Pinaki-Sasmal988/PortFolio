@@ -13,10 +13,10 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full py-20 border-b-[1px] border-gray-600"
     >
       <div className="flex justify-center items-center text-center">
-        <Tittle Tittle="CONTACT" des="Contact With Me" />
+        <Tittle Tittle="" des="Contact With Me" />
       </div>
       <div className="w-full">
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
