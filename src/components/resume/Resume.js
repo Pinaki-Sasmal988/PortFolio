@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Tittle } from "../layout/Tittle";
 import { Education } from "./Education";
 import { Skills } from "./Skills";
-import { Experience } from "./Experience";
+// import { Experience } from "./Experience";
 
 export const Resume = () => {
   const[educationData,setEducationData]=useState(true);
   const[skillData,setSkillData]=useState(false);
-  const[experienceData,setExperienceData]=useState(false);
+  // const[experienceData,setExperienceData]=useState(false);
 
   return (
     <section
@@ -18,27 +18,27 @@ export const Resume = () => {
         <Tittle Tittle="" des="My Resume" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
           <li onClick={()=>setEducationData(true) &
-           setExperienceData(false) &
+          //  setExperienceData(false) &
             setSkillData(false)
           } 
           className={`${educationData ?"border-designColor rounded-lg":"border-transparent"} resume`}>
             Education
             </li>
           <li onClick={()=>setEducationData(false) &
-             setSkillData(true)&
-             setExperienceData(false)
+             setSkillData(true)
+            //  & setExperienceData(false)
              } 
              className={`${skillData ?"border-designColor rounded-lg":"border-transparent"} resume`}>
               Programming Skilled
               </li>
-          <li onClick={()=>setEducationData(false) & 
-            setSkillData(false) & 
-            setExperienceData(true)}
+          {/* <li onClick={()=>setEducationData(false) & 
+            setSkillData(false) 
+            // setExperienceData(true)}
              className={`${experienceData ?"border-designColor rounded-lg":"border-transparent"} resume`}>
               Experience
-              </li>
+              </li> */}
         </ul>
       </div>
       {
@@ -47,11 +47,10 @@ export const Resume = () => {
       {
         skillData ? <Skills/>:""
       }
-      {
+      {/* {
         experienceData && <Experience/>
-      }
-      {/* <Education/> */}
-      {/* <Skills/> */}
+      } */}
+
     </section>
   );
 };
