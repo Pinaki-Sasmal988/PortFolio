@@ -8,7 +8,6 @@ export const Skills = () => {
         >
       <div>
         <div className="py-12 form-titleFont ">
-          <p className="text-sm text-designColor tracking[4px]">Features</p>
           <h2 className="text-2xl font-bold">Development Skills</h2>
         </div>
         <div className="mt-5 w-full flex flex-col gap-5">

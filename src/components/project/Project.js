@@ -13,19 +13,19 @@ export const Project = () => {
           <ProjectCard 
           
           tittle="Blood Find Application"
-          des="Learn from me totally free,Thats would be very help in your futures"
+          des="From this web application user can search nearest blood bank using pin number,That's bank actually registered in our portal.User can visit different blood bank, shaw the stock and order.(For source code click on github icon)"
           img={blood}
           link="https://github.com/Pinaki-Sasmal988/Final_year"
           />
         <ProjectCard 
             tittle="E-Commerce site"
-            des="Learn from me totally free, Thats would be very help in your futures"
+            des="This web application is a normal E-Commerce site.Where user can visit different product and after login they can order the product.Technology are used to develope this web application Laravel(php) framework (For source code click on github icon)"
             img={ecommerce}
             link="https://github.com/Pinaki-Sasmal988/E_Commerce"
           />
           <ProjectCard 
             tittle="Article News System"
-            des="Learn from me totally free"
+            des="This application show latest news as a article help of third party application.When latest news are update,it's automatically fetching in our application.If we want then we can visit the details of every articles.This application developed by React js. "
             img={news}
             link="https://github.com/Pinaki-Sasmal988/News-System"
           /> 

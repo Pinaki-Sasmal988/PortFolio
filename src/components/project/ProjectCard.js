@@ -1,6 +1,5 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
-import { Link } from "react-scroll";
 export const ProjectCard = ({ tittle, des, img, link }) => {
   return (
     <div
